@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- box icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+      <!-- font awesome -->
+      <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h1 class="title">Temperature Converter</h1>
+            <div class="degree-type">
+              <div class="degree-field">
+                <div class="contact__content">
+                  <label for="celsius" class="contact__label">Celsius:</label>
+                  <input type="number" class="contact__input" id="celsius" placeholder="Enter temperature in Celsius" oninput="convert('celsius')">
+                </div>
+                <div class="contact__content">
+                  <label for="fahrenheit" class="contact__label">Fahrenheit:</label>
+                  <input type="number" class="contact__input" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" oninput="convert('fahrenheit')">
+                </div>
+                <div class="contact__content">
+                  <label for="kelvin" class="contact__label">Kelvin:</label>
+                  <input type="number" class="contact__input" id="kelvin" placeholder="Enter temperature in Kelvin" oninput="convert('kelvin')">
+                <div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <!-- script tags -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
